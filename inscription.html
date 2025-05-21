@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal information Form </title>
+  <link rel="stylesheet" href="ffg.css">
+  
+</head>
+<body>
+    <img src="img/bg.jpg" alt="login image" class="login__img">
+<form>
+    
+        <legend><strong>Personal information</strong></legend>
+
+        <label>Last name :</label>
+        <input type="text" name="nom" placeholder="Enter your last name" required><br><br>
+
+        <label>first name :</label>
+        <input type="text" name="prenom" placeholder="Enter your first name" required><br><br>
+
+        <label>Email :</label>
+        <input type="email" name="email" placeholder="Enter your email address"required><br><br>
+
+        <label>password :</label>
+        <input type="password" name="password" placeholder=" Enter your password"required><br><br>
+
+        <label>confirm your password :</label>
+        <input type="password" name="password" placeholder="confirm your password"required><br><br>
+
+        <label> recovery key :</label>
+        <input type="text" name="password" placeholder="Enter your  revovery key"required><br></br>
+        <strong>Make sure to keep this recovery key safe in case you forget your password!</strong><br></br>
+
+        <label>phone number : </label>
+        <input type="pathern" name ="number" placeholder="Enter your phone" required><br><br>
+    
+    
+        <label>Gender:</label>
+        <input type="radio" name="genre" value="homme" checked> Male<br><br>
+        <input type="radio" name="genre" value="femme"> Female <br><br>
+
+        <label>Your profession:</label>
+        <select class="boxxs" name="profession">
+            <option value="salarié">Employee</option>
+            <option value="entreproneur"> Entrepreneur</option>
+            <option value="etudiant">Student</option>
+            <option value="non precisé">Not specified</option>
+        </select><br><br>
+ 
+        <label>Upload your profile picture</label>
+        <input type="file" name="photo"><br><br>
+
+        <button href="promer.html" type="submit__button">Sign up</button>
+    </form>
+</body>
+</html>

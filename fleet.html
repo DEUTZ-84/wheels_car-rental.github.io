@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveX - Full Fleet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="fleet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png" class="logo" alt="DriveX Logo">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Our Fleet</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#specials">Specials</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="promer.html" class="book-now-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="full-fleet-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Complete Fleet</h2>
+                <p class="section-subtitle">Choose from our extensive collection of premium vehicles</p>
+                
+                <div class="fleet-filters">
+                    <div class="filter-group">
+                        <label for="category">Category:</label>
+                        <select id="category">
+                            <option value="all">All Categories</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="suv">SUV</option>
+                            <option value="sports">Sports</option>
+                            <option value="electric">Electric</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort">Sort By:</label>
+                        <select id="sort">
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A-Z</option>
+                            <option value="name-desc">Name: Z-A</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" placeholder="Search vehicles...">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="full-fleet-grid">
+                <!-- Luxury Vehicles -->
+                <div class="vehicle-card" data-category="luxury">
+                    <div class="vehicle-image">
+                        <img src="img/bmw-m5.jpg" alt="BMW M5">
+                        <div class="vehicle-badge">Luxury</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>BMW M5 Competition</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$199 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="luxury">
+                    <div class="vehicle-image">
+                        <img src="img/mercedes-s-class.jpg" alt="Mercedes S-Class">
+                        <div class="vehicle-badge">Luxury</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mercedes S-Class</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Hybrid</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$249 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SUV Vehicles -->
+                <div class="vehicle-card" data-category="suv">
+                    <div class="vehicle-image">
+                        <img src="img/range-rover.jpg" alt="Range Rover">
+                        <div class="vehicle-badge">SUV</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Range Rover Autobiography</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> SUV</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Diesel</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$279 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="suv">
+                    <div class="vehicle-image">
+                        <img src="img/mercedes-gle.jpg" alt="Mercedes GLE">
+                        <div class="vehicle-badge">SUV</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mercedes GLE 450</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> SUV</div>
+                            <div class="spec"><i class="fas fa-users"></i> 7 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Diesel</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$229 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sports Vehicles -->
+                <div class="vehicle-card" data-category="sports">
+                    <div class="vehicle-image">
+                        <img src="img/porsche-911.jpg" alt="Porsche 911">
+                        <div class="vehicle-badge">Sports</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Porsche 911 Turbo S</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sports Car</div>
+                            <div class="spec"><i class="fas fa-users"></i> 4 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$399 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="sports">
+                    <div class="vehicle-image">
+                        <img src="img/audi-r8.jpg" alt="Audi R8">
+                        <div class="vehicle-badge">Sports</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Audi R8 V10</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Supercar</div>
+                            <div class="spec"><i class="fas fa-users"></i> 2 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$459 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Electric Vehicles -->
+                <div class="vehicle-card" data-category="electric">
+                    <div class="vehicle-image">
+                        <img src="img/tesla-model-s.jpg" alt="Tesla Model S">
+                        <div class="vehicle-badge">Electric</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Tesla Model S Plaid</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-bolt"></i> Electric</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$299 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="electric">
+                    <div class="vehicle-image">
+                        <img src="img/tesla-model-x.jpg" alt="Tesla Model X">
+                        <div class="vehicle-badge">Electric</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Tesla Model X</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> SUV</div>
+                            <div class="spec"><i class="fas fa-users"></i> 7 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-bolt"></i> Electric</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$329 <small>/day</small></span>
+                           <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Vehicles -->
+                <div class="vehicle-card" data-category="luxury">
+                    <div class="vehicle-image">
+                        <img src="img/lexus-ls.jpg" alt="Lexus LS">
+                        <div class="vehicle-badge">Luxury</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Lexus LS 500</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Hybrid</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$189 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="suv">
+                    <div class="vehicle-image">
+                        <img src="img/bmw-x7.jpg" alt="BMW X7">
+                        <div class="vehicle-badge">SUV</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>BMW X7 M50i</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> SUV</div>
+                            <div class="spec"><i class="fas fa-users"></i> 7 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$269 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="sports">
+                    <div class="vehicle-image">
+                        <img src="img/lamborghini-huracan.jpg" alt="Lamborghini Huracan">
+                        <div class="vehicle-badge">Sports</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Lamborghini Huracan</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Supercar</div>
+                            <div class="spec"><i class="fas fa-users"></i> 2 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$699 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="electric">
+                    <div class="vehicle-image">
+                        <img src="img/porsche-taycan.jpg" alt="Porsche Taycan">
+                        <div class="vehicle-badge">Electric</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Porsche Taycan Turbo</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 4 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-bolt"></i> Electric</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$349 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="luxury">
+                    <div class="vehicle-image">
+                        <img src="img/rolls-royce-ghost.jpg" alt="Rolls Royce Ghost">
+                        <div class="vehicle-badge">Luxury</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Rolls Royce Ghost</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> Sedan</div>
+                            <div class="spec"><i class="fas fa-users"></i> 5 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$799 <small>/day</small></span>
+                             <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card" data-category="suv">
+                    <div class="vehicle-image">
+                        <img src="img/cadillac-escalade.jpg" alt="Cadillac Escalade">
+                        <div class="vehicle-badge">SUV</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Cadillac Escalade</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec"><i class="fas fa-car"></i> SUV</div>
+                            <div class="spec"><i class="fas fa-users"></i> 7 seats</div>
+                            <div class="spec"><i class="fas fa-cog"></i> Automatic</div>
+                            <div class="spec"><i class="fas fa-gas-pump"></i> Gasoline</div>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price">$229 <small>/day</small></span>
+                            <div><a href="contact.html" class="btn">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="img/car-logo.png" class="footer-logo" alt="DriveX Logo">
+                    <p>Premium car rental service offering the finest selection of vehicles for every need and occasion.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Luxury Rentals</a></li>
+                        <li><a href="#">Airport Pickup</a></li>
+                        <li><a href="#">Long Term Rental</a></li>
+                        <li><a href="#">Corporate Program</a></li>
+                        <li><a href="#">Gift Certificates</a></li>
+                        <li><a href="#">24/7 Road Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DriveX Premium Car Rentals. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

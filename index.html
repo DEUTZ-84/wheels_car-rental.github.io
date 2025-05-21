@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveX - Premium Car Rentals</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="general.css">
+    <script src="script.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png" class="logo" alt="DriveX Logo">
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#fleet">Our Fleet</a>
+                <a href="#services">Services</a>
+                <a href="#specials">Specials</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="promer.html" class="book-now-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="text">
+            <h4>Premium, Luxurious and</h4>
+            <h1>Thrilling to <br> <span>Drive</span></h1>
+            <p>Experience the ultimate in performance and comfort with our premium fleet.</p>
+            <div class="hero-buttons">
+                <a href="#fleet" class="btn">Explore Fleet</a>
+                <a href="contact.html" class="btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-box">
+        <div class="container">
+            <form id="searchForm">
+                <div class="form-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Pickup Location</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+                <div class="form-group">
+                    <label><i class="far fa-calendar"></i> Pickup Date</label>
+                    <input type="date" id="pickupDate">
+                </div>
+                <div class="form-group">
+                    <label><i class="far fa-calendar"></i> Return Date</label>
+                    <input type="date" id="returnDate">
+                </div>
+                <button type="submit" class="search-btn">Find Vehicles</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+        <div class="container">
+            <h2>Our Premium Fleet</h2>
+            <p class="section-subtitle">Choose from our selection of luxury and performance vehicles</p>
+            
+            <div class="fleet-categories">
+                <button class="category-btn active" data-category="all">All Vehicles</button>
+                <button class="category-btn" data-category="luxury">Luxury</button>
+                <button class="category-btn" data-category="suv">SUV</button>
+                <button class="category-btn" data-category="sports">Sports</button>
+                <button class="category-btn" data-category="electric">Electric</button>
+            </div>
+            
+            <div class="fleet-grid" id="fleetGrid">
+                <!-- Vehicles will be loaded via JavaScript -->
+            </div>
+           <div class="btnSM_container"><a href="fleet.html"><button class="show_more_option">Show more</button></a></div> 
+        </div>
+    </section>
+
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">We offer more than just car rentals</p>
+            
+             <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                   <a href="airportpickup.html"> <h3>Airport Pickup</h3>
+                    <p>Convenient airport pickup and drop-off services at major airports nationwide.</p>
+                </div></a>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                   <a href ="longterm.html"><h3>Long Term Rental</h3>
+                    <p>Special rates for monthly rentals with flexible terms to suit your needs.</p></a> 
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <a href="corporate.html"><h3>Corporate Program</h3>
+                    <p>Tailored solutions for businesses with simplified billing and reporting.</p></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <a href="gift.html"><h3>Gift Certificates</h3>
+                    <p>The perfect gift for car enthusiasts - let them choose their dream ride.</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="section-subtitle">Hear from our satisfied customers</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The BMW M5 I rented was in perfect condition and made my business trip much more enjoyable. Excellent service!"</p>
+                        <div class="client-info">
+                            <img src="img/client1.jpg" alt="Michael Johnson">
+                            <div>
+                                <h4>Michael Johnson</h4>
+                                <span>Business Executive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Our family vacation was amazing thanks to the spacious Range Rover we rented. Smooth process from start to finish."</p>
+                        <div class="client-info">
+                            <img src="img/client2.jpg" alt="Sarah Williams">
+                            <div>
+                                <h4>Sarah Williams</h4>
+                                <span>Family Vacationer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"As a car enthusiast, I appreciate the well-maintained fleet. The Porsche 911 was everything I hoped for!"</p>
+                        <div class="client-info">
+                            <img src="img/client3.jpg" alt="David Chen">
+                            <div>
+                                <h4>David Chen</h4>
+                                <span>Car Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specials-section" id="specials">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <p class="section-subtitle">Exclusive deals for our valued customers</p>
+            
+            <div class="specials-grid">
+                <div class="special-card weekend-special">
+                    <div class="special-badge">Weekend Special</div>
+                    <h3>Weekend Getaway</h3>
+                    <p>Rent any luxury car for the weekend and get 20% off</p>
+                    <div class="special-price">
+                        <span class="old-price">$199/day</span>
+                        <span class="new-price">$159/day</span>
+                    </div>
+                    <a href="contact.html" class="btn">Book Now</a>
+                </div>
+                <div class="special-card monthly-special">
+                    <div class="special-badge">Monthly Deal</div>
+                    <h3>Extended Rental</h3>
+                    <p>Monthly rentals with unlimited mileage and free insurance</p>
+                    <div class="special-price">
+                        <span class="old-price">$2,999/month</span>
+                        <span class="new-price">$2,399/month</span>
+                    </div>
+                    <a href="contact.html" class="btn">Book Now</a>
+                </div>
+                <div class="special-card corporate-special">
+                    <div class="special-badge">Corporate</div>
+                    <h3>Business Program</h3>
+                    <p>Special rates and benefits for corporate clients</p>
+                    <div class="special-price">
+                        <span>Custom Pricing</span>
+                    </div>
+                    <a href="contact.html" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="img/car-logo.png" class="footer-logo" alt="DriveX Logo">
+                    <p>Premium car rental service offering the finest selection of vehicles for every need and occasion.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Luxury Rentals</a></li>
+                        <li><a href="airportpickup.html">Airport Pickup</a></li>
+                        <li><a href="longterm.html">Long Term Rental</a></li>
+                        <li><a href="corporate.html">Corporate Program</a></li>
+                        <li><a href="gift.html">Gift Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DriveX Premium Car Rentals. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>
